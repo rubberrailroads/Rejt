@@ -1,0 +1,135 @@
+/* Våra preliminära färger */
+:root {
+  --bgColor: #fbfef9;
+  --clickColor:  #ff8c42;
+  --clickColor2: #e8803c;
+  --eleColor: #e855c3;
+  --eleColor2: #d34eb2;
+}
+body {
+  margin: 0px;
+  background-color: var(--bgColor);
+}
+
+
+/* hidden för att senare bli togglade till annan display value */
+#logIn, #register, #startSearch{
+  display: none;
+}
+
+/* Master flex */
+#searcher, #searchList, #header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#content {
+  display: flex;
+/*  align-items: center;*/
+  justify-content: center;
+  margin-top: 12vh;
+}
+#header {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 3vw;
+  padding-top: 3vh;
+  height: 10vh;
+  width: 97vw;
+}
+#logo {
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  font-size: 7vh;
+  margin-bottom: 5vh;
+}
+#searchList {
+  width: 60vw;
+  
+}
+.item{
+  height: 10vh;
+  width: 100%;
+  background-color: var(--clickColor);
+  font-size: 4vh;
+  font-family: 'Dosis', sans-serif;
+  color: var(--bgColor);
+  box-shadow: 10px 15px var(--eleColor);
+  padding-left: 2vw;
+}
+.item2{
+  height: 10vh;
+  width: 100%;
+  background-color: var(--clickColor2);
+  font-size: 4vh;
+  font-family: 'Dosis', sans-serif;
+  color: var(--bgColor);
+  box-shadow: 10px 15px var(--eleColor2);
+  padding-left: 2vw;
+}
+#Searcher {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#searchBar {
+  height: 6vh;
+  width: 30vw;
+  font-size: 3vh;
+  margin-top: 2vh;
+  background-color: var(--bgColor);
+  color: var(--clickColor);
+  border: 0 none;
+  padding-left: 1vh;
+  box-shadow: 5px 5px var(--clickColor);
+}
+.button {
+  background-color: var(--eleColor);
+  color: var(--bgColor);
+  height: 6vh;
+  width: 10vw;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  border: 0 none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2vh;
+  box-shadow: 5px 5px var(--clickColor);
+}
+
+#aboutIcon {
+  position: absolute;
+  margin-left: 80vw;
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  padding-bottom: 10vh;
+}
+
+#accountIcon {
+  position: absolute;
+  margin-left: 90vw;
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  padding-bottom: 10vh;
+}
+
+#subHead {
+  position: absolute;
+  margin-top: 1vh;
+  margin-left: 9vw;
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  font-size: 2vh;
+  
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--clickColor);
+  text-align: center;
+
+}

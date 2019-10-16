@@ -1,0 +1,110 @@
+/* Våra preliminära färger */
+:root {
+  --bgColor: #fbfef9;
+  --clickColor:  #ff8c42;
+  --eleColor: #e855c3;
+}
+body {
+  margin: 0px;
+  background-color: var(--bgColor);
+}
+
+
+/* Placeholder för logga */
+#logo {
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  font-size: 15vh;
+}
+
+
+/* hidden för att senare bli togglade till annan display value */
+#searchList, #logIn, #register{
+  display: none;
+}
+
+
+/* Master flex */
+#searcher, #startSearch, #header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#content {
+  display: flex;
+  padding-top: 20vh;
+}
+
+#header {
+  justify-content: center;
+  flex-direction: row;
+  height: 30vh;
+  width: 100vw;
+  
+}
+#startSearch {
+  height: 60vh;
+  width: 100vw;
+  justify-content: flex-start;
+}
+
+
+/* Förändringar i input */
+
+#searchBar {
+  height: 7vh;
+  width: 50vw;
+  margin-bottom: 5vh;
+  font-size: 3vh;
+  background-color: var(--eleColor);
+  color: var(--bgColor);
+  border: 0 none;
+  padding-left: 1vh;
+  box-shadow: 5px 5px var(--clickColor);
+}
+.button {
+  background-color: var(--clickColor);
+  color: var(--bgColor);
+  height: 5vh;
+  width: 10vw;
+  border: 0 none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 3vh;
+  box-shadow: 5px 5px var(--eleColor);
+}
+
+#aboutIcon {
+  position: absolute;
+  margin-left: 80vw;
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  padding-bottom: 10vh;
+}
+
+#accountIcon {
+  position: absolute;
+  margin-left: 90vw;
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  padding-bottom: 10vh;
+}
+
+#subHead {
+  position: absolute;
+  margin-top: 30vh;
+  font-family: 'Dosis', sans-serif;
+  color: var(--clickColor);
+  font-size: 2vh;
+  
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--clickColor);
+  text-align: center;
+
+}
